@@ -1,0 +1,25 @@
+{
+  "name": "trexfitter-config",
+  "displayName": "trexfitter-config",
+  "description": "Syntax highlighting for TRExFitter config files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "trexfitter",
+      "aliases": ["TRExFitter", "trexfitter", "trex-fitter"],
+      "extensions": [".conf .config"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "trexfitter",
+      "scopeName": "source.trexfitter",
+      "path": "./syntaxes/trexfitter.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "TRExFitter Config",
+  "scopeName": "source.trexfitter",
+  "patterns": [
+    {
+      "name": "comment.line.hash.trexfitter",
+      "match": "#.*$"
+    },
+    {
+      "name": "comment.line.percent.trexfitter",
+      "match": "%.*$"
+    },
+    {
+      "name": "keyword.control.section.trexfitter",
+      "match": "^(\\s*)(Job|Fit|Limit|Significance|Options|Region|Sample|NormFactor|ShapeFactor|Systematic|Morphing|EFTConfig|UnfoldingSample|UnfoldingSystematic|Unfolding|TruthSample):"
+    },
+    {
+      "name": "variable.parameter.key.trexfitter",
+      "match": "^(\\s{2,}|\\t)?([A-Za-z_][A-Za-z0-9_]*)(?=\\s*:)"
+
+    },
+    {
+      "name": "string.quoted.double.trexfitter",
+      "match": "\"[^\"]*\""
+    },
+    {
+      "name": "constant.numeric.trexfitter",
+      "match": "\\b\\d+(\\.\\d+)?\\b"
+    },
+    {
+      "name": "constant.language.boolean.trexfitter",
+      "match": "\\b(TRUE|FALSE)\\b"
+    },
+    {
+      "name": "punctuation.delimiter.semicolon.trexfitter",
+      "match": ";"
+    }
+  ],
+  "repository": {},
+  "scopeName": "source.trexfitter"
+}
