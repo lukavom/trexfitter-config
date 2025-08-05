@@ -3,6 +3,7 @@
   "displayName": "trexfitter-config",
   "description": "Syntax highlighting for TRExFitter config files.",
   "version": "0.0.1",
+  "publisher": "LukaVomberg",
   "engines": {
     "vscode": "^1.102.0"
   },
